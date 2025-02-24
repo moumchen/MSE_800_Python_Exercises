@@ -13,7 +13,7 @@ def new_page():
 
 @app.route("/<name>/<int:age>")
 def welcome(name, age):
-    return f"welcome {name} who is {age} years old!"
+    return f"<p style='font-size:30px'>welcome <b>{name}</b> who is <b>{age}</b> years old!</p>"
 
 @app.route("/upload", methods=["GET", "POST"])
 def upload_images():
