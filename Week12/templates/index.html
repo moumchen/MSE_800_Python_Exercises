@@ -6,9 +6,13 @@
 </head>
 <body>
     <h1>Welcome to Yoobee!</h1>
-    <img src="/static/images/yoobee.jpg" alt="Yoobee Logo"><br/>
+    <img src="{{ img }}" alt="img"><br/>
     <button id="alertBtn">Alert Button</button>
     <button id="goToNewPage">Go to New Page</button>
+     <form action="/upload" enctype='multipart/form-data' method='POST'>
+        <input type="file" name="file" alt="choose a file" style="margin-top:20px;"/>
+        <input type="submit" id='submit' value="upload" class="button-new" style="margin-top:15px;"/>
+    </form>
     <script src="/static/script.js"></script>
 </body>
 </html>

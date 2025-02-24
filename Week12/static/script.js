@@ -5,4 +5,3 @@ document.getElementById('alertBtn').addEventListener('click', function() {
 document.getElementById("goToNewPage").addEventListener("click", function() {
     window.location.href = "/new";
 });
-
