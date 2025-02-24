@@ -7,12 +7,18 @@
 <body>
     <h1>Welcome to Yoobee!</h1>
     <img src="{{ img }}" alt="img"><br/>
+    some buttons:
     <button id="alertBtn">Alert Button</button>
     <button id="goToNewPage">Go to New Page</button>
      <form action="/upload" enctype='multipart/form-data' method='POST'>
+         upload a file that exists in your computer, and show it on this page:
         <input type="file" name="file" alt="choose a file" style="margin-top:20px;"/>
         <input type="submit" id='submit' value="upload" class="button-new" style="margin-top:15px;"/>
-    </form>
+    </form> <br/>
+    type your name here and click the button to see it in the URL:
+    <input type="text" id="nameText" placeholder="Type here your name"/>
+    <input type="text" id="ageText" placeholder="Type here your age"/>
+    <button id="parameterInURL">Test Parameters in URL</button><br/>
     <script src="/static/script.js"></script>
 </body>
 </html>

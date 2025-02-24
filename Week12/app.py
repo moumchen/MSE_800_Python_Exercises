@@ -11,6 +11,9 @@ def home():
 def new_page():
     return render_template('new.html')
 
+@app.route("/<name>/<int:age>")
+def welcome(name, age):
+    return f"welcome {name} who is {age} years old!"
 
 @app.route("/upload", methods=["GET", "POST"])
 def upload_images():
